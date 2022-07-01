@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.text p:first-child{
+    display: block;
+    margin: 15px;
+    border: 0;
+    padding: 15px;
+    color:brown
+}
+
+.text_first_of_type p:first-of-type{
+    color: green;
+    display: block;
+    margin: 15px;
+    border: 0;
+    padding: 15px;
+}
+
+.text_v *:first-child{
+    display: block;
+    margin: 15px;
+    border: 0;
+    padding: 15px;
+    color: blue;
+}
+
+.text_nth p:nth-child(2){
+    color: aqua;
+    display: block;
+    margin: 15px;
+    border: 0;
+    padding: 15px;
+
+}
+
+/* прсевдоилемент 
+пишут через ::
+*/
+
+.p_element1{
+    display: block;
+    margin: 15px;
+    border: 0;
+    padding: 15px;
+}
+
+.p_element1::first-line{
+    color: darkgoldenrod;
+}
+
+.p_element1::first-letter{
+    color: brown;
+}
+
+.p_element1::before{
+    content: "'";
+}
+
+.p_element1::after{
+    content: "'";
+}
+
+.list li{
+    padding: 30px;
+}
+
+.list li:hover::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 10px 0px -30px;
+    border-radius: 50%;
+}
+
+.list li:hover::before{
+    background-color:blue;
+}
